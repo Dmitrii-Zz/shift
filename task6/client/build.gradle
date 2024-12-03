@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.shift'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':task6:common')
+    //конфигурирование
+    implementation group: 'com.typesafe', name: 'config', version: '1.4.3'
+    //сериализация/десериализация
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.18.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    //логирование
+    implementation 'org.slf4j:slf4j-api:2.0.7'
+    implementation 'org.slf4j:slf4j-log4j12:2.0.7'
+}
+
+test {
+    useJUnitPlatform()
+}

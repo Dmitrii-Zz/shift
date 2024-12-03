@@ -1,0 +1,1 @@
+[{"difficulty":"MEDIUM","name":"Dimik","second":134},{"difficulty":"EXPERT","name":"Unknow","second":999},{"difficulty":"NOVICE","name":"Dmitrij","second":32}]
